@@ -33,4 +33,14 @@ var codicecp = document.getElementById('numerocodicecp').innerHTML = numcodicecp
 var costofinale = document.getElementById('costodelbiglietto').innerHTML = costobiglietto ;
 })
 //bottoneannula
-bottoneannulla
+bottoneannulla.addEventListener('click', function() {
+  //input
+document.getElementById('nome').value = '' ;
+document.getElementById('tratta').value = '' ;
+//pulire table
+document.getElementById('nomeoutput').innerHTML = '' ;
+document.getElementById('offertapplicata').innerHTML = '' ;
+document.getElementById('numerocarozza').innerHTML = '' ;
+document.getElementById('numerocodicecp').innerHTML = '' ;
+document.getElementById('costodelbiglietto').innerHTML = '' ;
+})
